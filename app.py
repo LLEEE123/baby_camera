@@ -4,6 +4,11 @@ from libcamera import controls
 import cv2
 
 app = Flask(__name__)
+#此版本可以透過網址進行參數調整，例如
+#http://10.0.0.9:8080/set_awb/Tungsten
+#http://10.0.0.9:8080/set_color/0.0/1.1/0.9
+#http://10.0.0.9:8080/set_custom_gains/1.3/0.7
+#但有顏色不平衡問題（會太藍）
 
 # 初始化 Pi Camera
 picam2 = Picamera2()
