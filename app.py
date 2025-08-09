@@ -56,7 +56,7 @@ def set_color(brightness, contrast, saturation):
         "Brightness": brightness,
         "Contrast": contrast,
         "Saturation": saturation
-    })
+    }) 
     return f"已設定 Brightness={brightness}, Contrast={contrast}, Saturation={saturation}"
 
 # 即時調整白平衡增益
